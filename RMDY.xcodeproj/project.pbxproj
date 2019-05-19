@@ -7,21 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C30F204265B97AF2844F820 /* Pods_RMDY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E9CA99EA9A86A3CDD46883 /* Pods_RMDY.framework */; };
 		560337B9228E1C7300969382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337B8228E1C7300969382 /* AppDelegate.swift */; };
-		560337BB228E1C7300969382 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337BA228E1C7300969382 /* ViewController.swift */; };
-		560337BE228E1C7300969382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560337BC228E1C7300969382 /* Main.storyboard */; };
 		560337C0228E1C7500969382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560337BF228E1C7500969382 /* Assets.xcassets */; };
 		560337C3228E1C7500969382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560337C1228E1C7500969382 /* LaunchScreen.storyboard */; };
+		560337CC228F3FDE00969382 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560337CB228F3FDE00969382 /* LoginStoryboard.storyboard */; };
+		560337CE228F403D00969382 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337CD228F403D00969382 /* LoginViewController.swift */; };
+		560337D1228F78D900969382 /* SplashStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560337D0228F78D900969382 /* SplashStoryboard.storyboard */; };
+		560337D3228F78F200969382 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337D2228F78F200969382 /* SplashViewController.swift */; };
+		560337D6228F804000969382 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337D5228F804000969382 /* WebServices.swift */; };
+		560337D8228F805600969382 /* RequestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337D7228F805600969382 /* RequestUtil.swift */; };
+		560337DE228F820C00969382 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337DD228F820C00969382 /* UIUtils.swift */; };
+		560337E0228F835100969382 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337DF228F835100969382 /* LoginModel.swift */; };
+		560337E2228F862600969382 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337E1228F862600969382 /* LoginResponse.swift */; };
+		560337E4229018AA00969382 /* DayStepsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337E3229018AA00969382 /* DayStepsModel.swift */; };
+		560337E6229019AF00969382 /* StepsChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337E5229019AF00969382 /* StepsChartData.swift */; };
+		560337EA229039DA00969382 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337E9229039DA00969382 /* LoginManager.swift */; };
+		560337EC22903FEA00969382 /* UserdefaultsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337EB22903FEA00969382 /* UserdefaultsUtil.swift */; };
+		560337EF22904E4700969382 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560337EE22904E4700969382 /* ChartViewController.swift */; };
+		560337F122904E6400969382 /* ChartStorybord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560337F022904E6400969382 /* ChartStorybord.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23689A757616BFD670A738D4 /* Pods-RMDY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMDY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RMDY/Pods-RMDY.debug.xcconfig"; sourceTree = "<group>"; };
 		560337B5228E1C7300969382 /* RMDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		560337B8228E1C7300969382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		560337BA228E1C7300969382 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		560337BD228E1C7300969382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		560337BF228E1C7500969382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		560337C2228E1C7500969382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		560337C4228E1C7500969382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		560337CB228F3FDE00969382 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		560337CD228F403D00969382 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		560337D0228F78D900969382 /* SplashStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashStoryboard.storyboard; sourceTree = "<group>"; };
+		560337D2228F78F200969382 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		560337D5228F804000969382 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		560337D7228F805600969382 /* RequestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUtil.swift; sourceTree = "<group>"; };
+		560337DD228F820C00969382 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
+		560337DF228F835100969382 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		560337E1228F862600969382 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		560337E3229018AA00969382 /* DayStepsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayStepsModel.swift; sourceTree = "<group>"; };
+		560337E5229019AF00969382 /* StepsChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsChartData.swift; sourceTree = "<group>"; };
+		560337E9229039DA00969382 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		560337EB22903FEA00969382 /* UserdefaultsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserdefaultsUtil.swift; sourceTree = "<group>"; };
+		560337EE22904E4700969382 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		560337F022904E6400969382 /* ChartStorybord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChartStorybord.storyboard; sourceTree = "<group>"; };
+		A5EB922987E2B7D72056569D /* Pods-RMDY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMDY.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMDY/Pods-RMDY.release.xcconfig"; sourceTree = "<group>"; };
+		F1E9CA99EA9A86A3CDD46883 /* Pods_RMDY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMDY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +59,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C30F204265B97AF2844F820 /* Pods_RMDY.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E7772D00852FDF7329A18D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23689A757616BFD670A738D4 /* Pods-RMDY.debug.xcconfig */,
+				A5EB922987E2B7D72056569D /* Pods-RMDY.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49C1E3CB82E903CAF7ECE015 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1E9CA99EA9A86A3CDD46883 /* Pods_RMDY.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		560337AC228E1C7300969382 = {
 			isa = PBXGroup;
 			children = (
 				560337B7228E1C7300969382 /* RMDY */,
 				560337B6228E1C7300969382 /* Products */,
+				0E7772D00852FDF7329A18D7 /* Pods */,
+				49C1E3CB82E903CAF7ECE015 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +104,83 @@
 		560337B7228E1C7300969382 /* RMDY */ = {
 			isa = PBXGroup;
 			children = (
+				560337ED22904E3300969382 /* ChartViewController */,
+				560337E8229039B300969382 /* Managers */,
+				560337DC228F81FA00969382 /* Utilities */,
+				560337D9228F815500969382 /* Entities */,
+				560337D4228F802E00969382 /* Connections */,
+				560337CF228F78B200969382 /* SplashViewController */,
+				560337CA228F3FBA00969382 /* LoginViewController */,
 				560337B8228E1C7300969382 /* AppDelegate.swift */,
-				560337BA228E1C7300969382 /* ViewController.swift */,
-				560337BC228E1C7300969382 /* Main.storyboard */,
 				560337BF228E1C7500969382 /* Assets.xcassets */,
 				560337C1228E1C7500969382 /* LaunchScreen.storyboard */,
 				560337C4228E1C7500969382 /* Info.plist */,
 			);
 			path = RMDY;
+			sourceTree = "<group>";
+		};
+		560337CA228F3FBA00969382 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				560337CB228F3FDE00969382 /* LoginStoryboard.storyboard */,
+				560337CD228F403D00969382 /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		560337CF228F78B200969382 /* SplashViewController */ = {
+			isa = PBXGroup;
+			children = (
+				560337D0228F78D900969382 /* SplashStoryboard.storyboard */,
+				560337D2228F78F200969382 /* SplashViewController.swift */,
+			);
+			path = SplashViewController;
+			sourceTree = "<group>";
+		};
+		560337D4228F802E00969382 /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				560337D5228F804000969382 /* WebServices.swift */,
+				560337D7228F805600969382 /* RequestUtil.swift */,
+			);
+			path = Connections;
+			sourceTree = "<group>";
+		};
+		560337D9228F815500969382 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				560337DF228F835100969382 /* LoginModel.swift */,
+				560337E1228F862600969382 /* LoginResponse.swift */,
+				560337E3229018AA00969382 /* DayStepsModel.swift */,
+				560337E5229019AF00969382 /* StepsChartData.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		560337DC228F81FA00969382 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				560337DD228F820C00969382 /* UIUtils.swift */,
+				560337EB22903FEA00969382 /* UserdefaultsUtil.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		560337E8229039B300969382 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				560337E9229039DA00969382 /* LoginManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		560337ED22904E3300969382 /* ChartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				560337EE22904E4700969382 /* ChartViewController.swift */,
+				560337F022904E6400969382 /* ChartStorybord.storyboard */,
+			);
+			path = ChartViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 560337C7228E1C7500969382 /* Build configuration list for PBXNativeTarget "RMDY" */;
 			buildPhases = (
+				3A93DBB22E8D17F809621E81 /* [CP] Check Pods Manifest.lock */,
 				560337B1228E1C7300969382 /* Sources */,
 				560337B2228E1C7300969382 /* Frameworks */,
 				560337B3228E1C7300969382 /* Resources */,
+				8A09C763A81B45BBDC9F1F49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,34 +244,88 @@
 			buildActionMask = 2147483647;
 			files = (
 				560337C3228E1C7500969382 /* LaunchScreen.storyboard in Resources */,
+				560337CC228F3FDE00969382 /* LoginStoryboard.storyboard in Resources */,
 				560337C0228E1C7500969382 /* Assets.xcassets in Resources */,
-				560337BE228E1C7300969382 /* Main.storyboard in Resources */,
+				560337F122904E6400969382 /* ChartStorybord.storyboard in Resources */,
+				560337D1228F78D900969382 /* SplashStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A93DBB22E8D17F809621E81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RMDY-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A09C763A81B45BBDC9F1F49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RMDY/Pods-RMDY-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftChart/SwiftChart.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftChart.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RMDY/Pods-RMDY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		560337B1228E1C7300969382 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				560337BB228E1C7300969382 /* ViewController.swift in Sources */,
+				560337CE228F403D00969382 /* LoginViewController.swift in Sources */,
+				560337E4229018AA00969382 /* DayStepsModel.swift in Sources */,
+				560337EC22903FEA00969382 /* UserdefaultsUtil.swift in Sources */,
+				560337E0228F835100969382 /* LoginModel.swift in Sources */,
+				560337EF22904E4700969382 /* ChartViewController.swift in Sources */,
 				560337B9228E1C7300969382 /* AppDelegate.swift in Sources */,
+				560337D8228F805600969382 /* RequestUtil.swift in Sources */,
+				560337DE228F820C00969382 /* UIUtils.swift in Sources */,
+				560337D6228F804000969382 /* WebServices.swift in Sources */,
+				560337EA229039DA00969382 /* LoginManager.swift in Sources */,
+				560337E2228F862600969382 /* LoginResponse.swift in Sources */,
+				560337E6229019AF00969382 /* StepsChartData.swift in Sources */,
+				560337D3228F78F200969382 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		560337BC228E1C7300969382 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				560337BD228E1C7300969382 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		560337C1228E1C7500969382 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +455,7 @@
 		};
 		560337C8228E1C7500969382 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23689A757616BFD670A738D4 /* Pods-RMDY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +473,7 @@
 		};
 		560337C9228E1C7500969382 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5EB922987E2B7D72056569D /* Pods-RMDY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

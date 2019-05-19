@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KoK-6F-0A1">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="HFs-n7-Cw4">
+            <objects>
+                <viewController storyboardIdentifier="loginStoryboard" id="KoK-6F-0A1" customClass="LoginViewController" customModule="RMDY" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kcA-EW-uc4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RMDY-logo" translatesAutoresizingMaskIntoConstraints="NO" id="oAU-qy-jFk">
+                                <rect key="frame" x="132" y="86" width="150" height="53"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i2U-bv-QQ3">
+                                <rect key="frame" x="67" y="251" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6kO-6E-QcJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jx7-cv-Gby">
+                                <rect key="frame" x="73" y="311" width="274" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="siy-LD-eVX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulz-xd-xqU">
+                                <rect key="frame" x="157" y="403" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RrM-F8-pJC"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButton:" destination="KoK-6F-0A1" eventType="touchUpInside" id="42Y-wV-rxS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hMQ-9l-qxh" firstAttribute="trailing" secondItem="Ulz-xd-xqU" secondAttribute="trailing" constant="157" id="2Pa-ny-Ovc"/>
+                            <constraint firstItem="Ulz-xd-xqU" firstAttribute="top" secondItem="Jx7-cv-Gby" secondAttribute="bottom" constant="55" id="87t-jX-FiR"/>
+                            <constraint firstItem="hMQ-9l-qxh" firstAttribute="trailing" secondItem="i2U-bv-QQ3" secondAttribute="trailing" constant="67" id="9dq-kA-cKj"/>
+                            <constraint firstItem="oAU-qy-jFk" firstAttribute="leading" secondItem="hMQ-9l-qxh" secondAttribute="leading" constant="132" id="Bkk-cS-hmx"/>
+                            <constraint firstItem="hMQ-9l-qxh" firstAttribute="trailing" secondItem="oAU-qy-jFk" secondAttribute="trailing" constant="132" id="QbW-9O-Y4V"/>
+                            <constraint firstItem="hMQ-9l-qxh" firstAttribute="trailing" secondItem="Jx7-cv-Gby" secondAttribute="trailing" constant="67" id="Qls-PN-J2l"/>
+                            <constraint firstItem="Jx7-cv-Gby" firstAttribute="leading" secondItem="hMQ-9l-qxh" secondAttribute="leading" constant="73" id="gGg-tb-kzP"/>
+                            <constraint firstItem="Jx7-cv-Gby" firstAttribute="top" secondItem="i2U-bv-QQ3" secondAttribute="bottom" constant="30" id="iQr-zG-yBh"/>
+                            <constraint firstItem="i2U-bv-QQ3" firstAttribute="leading" secondItem="hMQ-9l-qxh" secondAttribute="leading" constant="67" id="nsJ-sw-1wP"/>
+                            <constraint firstItem="Ulz-xd-xqU" firstAttribute="leading" secondItem="hMQ-9l-qxh" secondAttribute="leading" constant="157" id="tKB-6g-2pf"/>
+                            <constraint firstItem="oAU-qy-jFk" firstAttribute="top" secondItem="hMQ-9l-qxh" secondAttribute="top" constant="42" id="x6a-gQ-y4e"/>
+                            <constraint firstItem="hMQ-9l-qxh" firstAttribute="bottom" secondItem="Ulz-xd-xqU" secondAttribute="bottom" constant="419" id="zdS-Ph-phB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hMQ-9l-qxh"/>
+                    </view>
+                    <connections>
+                        <outlet property="password" destination="Jx7-cv-Gby" id="q9e-tV-XNd"/>
+                        <outlet property="username" destination="i2U-bv-QQ3" id="azS-6p-1LG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="piH-XZ-9w5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198.55072463768118" y="-172.09821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RMDY-logo" width="228" height="53"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_RMDY {
+  umbrella header "Pods-RMDY-umbrella.h"
+
+  export *
+  module * { export * }
+}

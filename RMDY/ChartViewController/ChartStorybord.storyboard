@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LMH-JI-Vj6">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chart View Controller-->
+        <scene sceneID="T8i-cr-49W">
+            <objects>
+                <viewController storyboardIdentifier="chartStorybord" id="LMH-JI-Vj6" customClass="ChartViewController" customModule="RMDY" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oxf-Dq-3ns">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGw-8C-P4T" customClass="Chart" customModule="SwiftChart">
+                                <rect key="frame" x="5" y="222" width="405" height="303"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="412" id="EOl-RX-TM3"/>
+                                    <constraint firstAttribute="height" constant="303" id="Urh-Zo-Iox"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RMDY-logo" translatesAutoresizingMaskIntoConstraints="NO" id="mYi-Jn-AIO">
+                                <rect key="frame" x="132" y="44" width="150" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="dL0-QX-cFl"/>
+                                </constraints>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BPR-j8-QSQ">
+                                <rect key="frame" x="63" y="618" width="280" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="OAO-VX-zYL"/>
+                                    <constraint firstAttribute="height" constant="28" id="iFG-v8-T25"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Week"/>
+                                    <segment title="Month"/>
+                                    <segment title="Quarter"/>
+                                </segments>
+                                <connections>
+                                    <action selector="rangeAction:" destination="LMH-JI-Vj6" eventType="valueChanged" id="rKP-5l-s9C"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z1B-3V-QgV" firstAttribute="trailing" secondItem="BPR-j8-QSQ" secondAttribute="trailing" constant="71" id="5PQ-hd-fKT"/>
+                            <constraint firstItem="mYi-Jn-AIO" firstAttribute="centerX" secondItem="HGw-8C-P4T" secondAttribute="centerX" id="7su-nF-1WO"/>
+                            <constraint firstItem="z1B-3V-QgV" firstAttribute="bottom" secondItem="BPR-j8-QSQ" secondAttribute="bottom" constant="216" id="8Hv-L8-uET"/>
+                            <constraint firstItem="mYi-Jn-AIO" firstAttribute="centerX" secondItem="oxf-Dq-3ns" secondAttribute="centerX" id="FCd-Ol-T9i"/>
+                            <constraint firstItem="mYi-Jn-AIO" firstAttribute="top" secondItem="z1B-3V-QgV" secondAttribute="top" id="FsW-3C-ZmD"/>
+                            <constraint firstItem="BPR-j8-QSQ" firstAttribute="top" secondItem="HGw-8C-P4T" secondAttribute="bottom" constant="93" id="IrV-cj-I7K"/>
+                            <constraint firstItem="HGw-8C-P4T" firstAttribute="leading" secondItem="z1B-3V-QgV" secondAttribute="leading" constant="1" id="THq-Im-Guu"/>
+                            <constraint firstItem="BPR-j8-QSQ" firstAttribute="leading" secondItem="z1B-3V-QgV" secondAttribute="leading" constant="63" id="YLc-Lf-PHe"/>
+                            <constraint firstItem="mYi-Jn-AIO" firstAttribute="leading" secondItem="z1B-3V-QgV" secondAttribute="leading" constant="132" id="b0r-pM-fID"/>
+                            <constraint firstItem="HGw-8C-P4T" firstAttribute="top" secondItem="mYi-Jn-AIO" secondAttribute="bottom" constant="113" id="eVa-6u-q5j"/>
+                            <constraint firstItem="HGw-8C-P4T" firstAttribute="leading" secondItem="oxf-Dq-3ns" secondAttribute="leading" constant="1" id="ee1-Yb-pHm"/>
+                            <constraint firstItem="HGw-8C-P4T" firstAttribute="trailing" secondItem="z1B-3V-QgV" secondAttribute="trailing" constant="-1" id="iiS-Pc-pXp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z1B-3V-QgV"/>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="HGw-8C-P4T" id="ofF-lQ-Ovn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2I-u4-eQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="57.589285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RMDY-logo" width="228" height="53"/>
+    </resources>
+</document>
